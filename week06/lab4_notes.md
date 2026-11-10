@@ -1,0 +1,3 @@
+Question 1: I encountered Error 1451, which states that a parent row cannot be deleted due to a failing foreign key constraint. MySQL refuses this action to preserve referential integrity because a student record was still actively linked to that department.   
+
+Question 2: This was fixed by first updating the student's record to belong to a different department before executing the deletion. Alternatively, a CASCADE or SET NULL rule could have been defined on the foreign key to automatically handle or drop dependent records.

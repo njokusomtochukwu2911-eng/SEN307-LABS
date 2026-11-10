@@ -1,0 +1,22 @@
+-- USE sen30711680;
+-- SELECT dept_id, dept_name FROM Department;
+-- SELECT course_id, course_code FROM Course;
+-- SET SQL_SAFE_UPDATES = 0;
+-- UPDATE Student SET dept_id = 2 WHERE matric_no = '20231234';
+-- SET SQL_SAFE_UPDATES = 1;
+-- INSERT INTO Department (dept_name) VALUES ('Library and Information Science');
+-- INSERT INTO Student (matric_no, full_name, dept_id) 
+-- VALUES ('20239999', 'Transfer Student', 
+-- (SELECT dept_id FROM Department WHERE dept_name = 'Library and Information Science'));
+-- DELETE FROM Department WHERE dept_name = 'Library and Information Science';
+-- UPDATE Student 
+-- SET dept_id = (SELECT dept_id FROM Department WHERE dept_name = 'Software Engineering') 
+-- WHERE matric_no = '20239999';
+-- DELETE FROM Department WHERE dept_name = 'Library and Information Science';
+-- SELECT * FROM Department;
+-- SELECT 'Departments' AS tbl, COUNT(*) AS total FROM Department
+-- UNION ALL SELECT 'Lecturers', COUNT(*) FROM Lecturer
+-- UNION ALL SELECT 'Students', COUNT(*) FROM Student
+-- UNION ALL SELECT 'Courses', COUNT(*) FROM Course
+-- UNION ALL SELECT 'Enrolments', COUNT(*) FROM Enrolment
+-- UNION ALL SELECT 'Allocations', COUNT(*) FROM CourseAllocation;
